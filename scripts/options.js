@@ -10,7 +10,7 @@ function restoreOptions() {
 
 
 $(document).ready(function() {
-    
+    // Get options stored from chrome.storage to display
     restoreOptions();
     
     // Save options to chrome.storage
@@ -26,10 +26,13 @@ $(document).ready(function() {
         }, function() {
           // Update status to let user know options were saved.
           var status = document.getElementById('status');
-          status.textContent = 'Options saved.';
+          status.textContent = 'Options saved!';
           setTimeout(function() {
             status.textContent = '';
           }, 750);
+          setTimeout(function() {
+            window.close();
+          }, 1000);
         });
     });
 });
@@ -42,4 +45,6 @@ $(function() {
 	$('#slider').change(function(){
 	    value.html(this.value);
 	});
+    
+    $('#slider').change();
 });

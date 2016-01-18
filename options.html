@@ -7,21 +7,21 @@
     <title>Nearbrite extension options</title>
   </head>
 <body>
-  Events:
+  <h4>Events:</h4>
   <form>
-    <input type="radio" name="time" value="now" checked="checked">Up comming<br>
-    <input type="radio" name="time" value="next">Next weekend<br>
-  </form><br>
-  
-  Ticket type:
-  <form>
-    <input type="radio" name="ticket" value="" checked="checked">All<br>
-    <input type="radio" name="ticket" value="free">Free<br>
-    <input type="radio" name="ticket" value="paid">Paid<br>
+    <div class="input_field"><input type="radio" name="time" value="now" checked="checked">Up comming</div>
+    <div class="input_field"><input type="radio" name="time" value="next">Next weekend</div>
   </form>
   
-  <p>Distance: <span id="distance">10</span> miles</p>
-  <input id="slider" type="range" min="0" value="10" max="50" step="5"/>
+  <h4>Ticket type:</h4>
+  <form>
+    <div class="input_field"><input type="radio" name="ticket" value="all" checked="checked">All</div>
+    <div class="input_field"><input type="radio" name="ticket" value="free">Free</div>
+    <div class="input_field"><input type="radio" name="ticket" value="paid">Paid</div>
+  </form>
+ 
+  <p><b>Distance: </b><span id="distance">10</span> miles</p>
+  <input id="slider" type="range" min="5" max="50" step="5"/>
 
   <div id="status"></div>
   <button id="save">Save</button>

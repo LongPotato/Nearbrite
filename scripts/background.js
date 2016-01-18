@@ -46,10 +46,8 @@ function parseEvent(item) {
     
     // Check if the event's logo exists
     event.pic = item.logo == null ? '' : item.logo.url;
-    
     // Format the time
     event.time = moment(item.start.local).format("ddd, MMM D YYYY, h:mm a");
-    
     // Match event's category id
     event.tag = gCategories[item.category_id];
 

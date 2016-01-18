@@ -1,4 +1,15 @@
-input[type="radio"] {
-    margin-top: 0px;
-    margin-right: 0px;
+.input_field {
+    margin-top: 5px;
+}
+
+input[type=radio] {
+    margin-right: 5px;
+}
+
+#save {
+    margin-top: 10px;
+}
+
+#status {
+    color: green;
 }
