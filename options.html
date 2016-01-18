@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="scripts/jquery-1.12.0.min.js"></script>
+    <script src="scripts/options.js"></script>
+    <link rel="stylesheet" href="stylesheets/option.css" type="text/css"/>
+    <title>Nearbrite extension options</title>
+  </head>
+<body>
+  Events:
+  <form>
+    <input type="radio" name="time" value="now" checked="checked">Up comming<br>
+    <input type="radio" name="time" value="next">Next weekend<br>
+  </form><br>
+  
+  Ticket type:
+  <form>
+    <input type="radio" name="ticket" value="" checked="checked">All<br>
+    <input type="radio" name="ticket" value="free">Free<br>
+    <input type="radio" name="ticket" value="paid">Paid<br>
+  </form>
+  
+  <p>Distance: <span id="distance">10</span> miles</p>
+  <input id="slider" type="range" min="0" value="10" max="50" step="5"/>
+
+  <div id="status"></div>
+  <button id="save">Save</button>
+</body>
+</html>

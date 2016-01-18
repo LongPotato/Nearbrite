@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "Nearbrite",
+  "version": "1.0",
+  "description": "Awesome upcoming events near you!",
+    
+  "icons": { 
+    "16": "images/icon.png",
+    "48": "images/48.png",
+    "128": "images/48.png"
+  },
+    
+  "permissions": [
+    "https://www.eventbriteapi.com/v3/",
+    "geolocation",
+    "storage"
+  ],
+    
+  "background": {
+    "scripts": [
+        "scripts/jquery-1.12.0.min.js",
+        "scripts/moment.js",
+        "scripts/token.js", 
+        "scripts/background.js"
+    ]
+  },
+    
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+    
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  }
+}
