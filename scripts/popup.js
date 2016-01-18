@@ -5,9 +5,9 @@ var gDistance = "10mi";
 
 // Display the events to the HTML page
 function displayEvents(data) {
+    $('#loading').hide();
     
-    $.each(data, function(i, item) {      
-        console.log(data.url);
+    $.each(data, function(i, item) {
         var entry = 
           '<div class="event">\
            <a target="_blank" href="' + item.url + '">\
