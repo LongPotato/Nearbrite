@@ -8,6 +8,7 @@
     src: url(BentonSansRegular.otf);
 }
 
+/* Hide the scroll bar */
 ::-webkit-scrollbar { 
     display: none; 
 }

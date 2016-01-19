@@ -105,7 +105,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, callback) {
         if (request.time == "next") {
           // This will return the Sunday of next weekend (end of range)
           var endTime = moment().add(1, 'weeks').endOf('isoWeek').format("YYYY-MM-DDTHH:mm:ss");
-          // This will return the Friday night (start of range)
+          // This will return the Friday midnight of next weekend (start of range)
           var startTime = moment().add(1, 'weeks').endOf('isoWeek').subtract(2, 'days').format("YYYY-MM-DDTHH:mm:ss");
           console.log(endTime);
           console.log(startTime);
