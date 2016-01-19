@@ -8,6 +8,10 @@
     src: url(BentonSansRegular.otf);
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 #img_box {
     width: 100%;
     text-align: center;

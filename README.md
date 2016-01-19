@@ -6,7 +6,7 @@ This Chrome extension uses Eventbrite's public API to get and display nearby pop
 
 ##Features
 
-* Access browser current location and search for events on Eventbrites
+* Access browser current location and search for events on [Eventbrites](https://www.eventbrite.com/)
 * Display events: names & time & categories...
 * Sort by date
 * Option page:
