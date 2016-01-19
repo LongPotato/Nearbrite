@@ -1,11 +1,14 @@
 // Insert the stored values back to display on the option page
 function restoreOptions() {
-    chrome.storage.sync.get(function(items) {
-        $('input[name=time][value=' + items.time + ']').prop('checked', true);
-        $('input[name=ticket][value=' + items.ticket + ']').prop('checked', true);
-        $('#distance').html(items.distance.replace('mi',''));
-        $('#slider').val(items.distance.replace('mi',''));
-    });
+    chrome.storage.sync.get({time: "now",
+                             ticket: "all",
+                             distance: "10mi"},
+        function(items) {
+            $('input[name=time][value=' + items.time + ']').prop('checked', true);
+            $('input[name=ticket][value=' + items.ticket + ']').prop('checked', true);
+            $('#distance').html(items.distance.replace('mi',''));
+            $('#slider').val(items.distance.replace('mi',''));
+        });
 }
 
 

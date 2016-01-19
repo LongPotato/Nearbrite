@@ -26,11 +26,15 @@ function displayEvents(data) {
 
 // Pass the values stored in storage to the global variabes
 function getOptions() {
-    chrome.storage.sync.get(function(items) {
-        gTime = items.time;
-        gTicket = items.ticket;
-        gDistance = items.distance;
-    });
+    // 2 arguments: default values & call back function to assign variables
+    chrome.storage.sync.get({time: "now",
+                             ticket: "all",
+                             distance: "10mi"},
+        function(items) {
+            gTime = items.time;
+            gTicket = items.ticket;
+            gDistance = items.distance;
+        });
 }
 
 // Everything start here
