@@ -104,9 +104,11 @@ chrome.runtime.onMessage.addListener(function (request, sender, callback) {
         // Calculate the date range for next weekend option
         if (request.time == "next") {
           // This will return the Sunday of next weekend (end of range)
-          var endTime = moment().add(1, 'weeks').endOf('isoWeek').format("YYYY-MM-DDThh:mm:ss");
+          var endTime = moment().add(1, 'weeks').endOf('isoWeek').format("YYYY-MM-DDTHH:mm:ss");
           // This will return the Friday night (start of range)
-          var startTime = moment().add(1, 'weeks').endOf('isoWeek').subtract(2, 'days').format("YYYY-MM-DDThh:mm:ss");
+          var startTime = moment().add(1, 'weeks').endOf('isoWeek').subtract(2, 'days').format("YYYY-MM-DDTHH:mm:ss");
+          console.log(endTime);
+          console.log(startTime);
           url = url + "&start_date.range_start=" + startTime + "&start_date.range_end=" + endTime;
         }
         
