@@ -20,8 +20,7 @@
 
 .item:hover, .item:hover a {
 	/*background: #E6E6E6;*/
-    transform:  scaleY(1.1);
-    transform: scaleX(1.1);
+    transform:  scale(1.1);
 }
 
 body {
@@ -48,7 +47,7 @@ body {
 	text-overflow: ellipsis;
 	overflow: hidden;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 	/* margin-right: 15px; */
     transition: all .2s ease-in-out;
     box-shadow: 0px 1px 1px 1px rgba(119, 119, 119, 0.2);
