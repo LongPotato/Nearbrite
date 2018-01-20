@@ -4,7 +4,7 @@ Stay up to date with exciting events around you!
 
 This Chrome extension uses Eventbrite's public API to get and display nearby popular events.
 
-##Features
+## Features
 
 * Access browser current location and search for events on [Eventbrites](https://www.eventbrite.com/)
 * Display events: names & time & categories...
